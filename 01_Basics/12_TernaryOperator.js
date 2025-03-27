@@ -25,3 +25,11 @@ let activity= isRaining ? "Stay inside" : "Go outside" ;            // Output : 
 true ? "Nouman" : 100                 // Output: Nouman
 
 False ? "Nouman : 100                 // Output : 100
+
+  Task:
+Write a program that takes a number as input and uses a ternary operator to print whether it's "Even" or "Odd"
+Solution:
+
+let num = prompt("Enter a number");
+let result = input % 2 === 0 ? "Even" : "Odd";
+console.log(result);
