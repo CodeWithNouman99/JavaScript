@@ -45,3 +45,18 @@ person.city = "Faisalabad";
 
 // 4. Print name and city together
 console.log(`${person.name} lives in ${person.city}`); // "Nouman lives in Faisalabad"
+
+// We can also add object in object like:
+
+const person2= 
+{
+    Name : "Ali",
+    city: "Faisalabad",
+    age : 20+5,
+    isStudent : false,
+    address: {
+        city : "LAHORE",
+        pinCode : 5678,
+        state : "Punjab",
+    }
+      console.log(person2.address.city)
