@@ -58,5 +58,10 @@ const person2=
         city : "LAHORE",
         pinCode : 5678,
         state : "Punjab",
+      moreDetails:
+        {
+          population: 92848684568,
+          area: "456 sq km",
     }
       console.log(person2.address.city)
+      console.log(person2.moreDetails.area)
