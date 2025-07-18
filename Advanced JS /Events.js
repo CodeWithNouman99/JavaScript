@@ -1,5 +1,4 @@
                                                     Events:
-ChatGPT said:
 In JavaScript, an event is an action or occurrence that happens in the browser and can be detected by JavaScript. Examples of events include a user clicking a button, moving the mouse, pressing a key, submitting a form, or the page loading. JavaScript allows you to write code that "listens" for these events and responds when they occur using event listeners.
 
 For example:
