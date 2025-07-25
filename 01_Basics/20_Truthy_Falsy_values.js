@@ -22,7 +22,13 @@ if (email) {
   => "0",'false'," ",[],{},function(){}
 
 
-                Nullish Coalescing operator(??): null, undefined
+               => ` Nullish Coalescing operator(??): null, undefined
   let val1
   val1=5 ?? 10
+  val2=null ?? 10
+  val3=undefined ?? 15
+  val4=null ?? 10 ?? 15
   console.log(val1)            //5 
+  console.log(val2)            //10
+  consoloe.log(val3)            //undefined
+  cosole.log(val4)              //10 Jo pehle value likhi hoi ho gi wo output ae gi
