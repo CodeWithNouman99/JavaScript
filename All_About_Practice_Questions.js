@@ -99,3 +99,70 @@ Another:
 let strings= ["Nouman","Ali","Usman","Hamza","Bilal"]
 let result= strings.reverse()
 console.log(result)
+
+Q7: Write a function that calculates the factorial of a given number
+function factorial(input)
+{
+    let result=1;
+    for(let i=1;i<=input;i++)
+    {
+        result=result*i;
+        console.log(result)
+    }
+}
+factorial(0)
+
+Q8: write a function that tells if provided year is a leap year or not.
+function leapYear(year)
+{
+    if(typeof year!=Number)
+    {
+        throw new Error ("plz enter a valid year")
+    }
+    if(year%4==0)
+    {
+        console.log(`${year} is a leap year`)
+    }
+    else
+    {
+        console.log(`${year} is not a leap year`)
+    }
+}
+leapYear(2026)
+
+Q9: Write a function that calculates and prints the sum of the digits of a given number.
+let arr = [1, 2, 3, 4, 5];
+let sum = 0; // Initialize ONCE outside the loop
+
+for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]; // Add the ELEMENT, not the index
+}
+
+console.log(sum); // Output: 15 (1+2+3+4+5)
+
+Q10: Write a function that generates and prints a multiplication table for a given number up to a specified range.
+function table(num,range)
+{
+    if(num<1)
+    {
+        throw new Error("Please give me the number greater than 1")        
+    }
+    if(range>10)
+    {
+      throw new Error("Please give me the number range under 10")     
+    }
+    for(let i=1;i<=range;i++)
+    {
+        console.log(`${num} * ${i} =`+num*i)
+    }
+}
+table(5,10)
+
+Q11: Write a function that finds and prints the maximum number in an array of numbers
+function findMaxNumber(arr) {
+  console.log(Math.max(...arr));
+}
+
+// Example usage:
+findMaxNumber([3, 7, 2, 9, 1]);  // Prints: 9
+findMaxNumber([-5, -2, -10]);     // Prints: -2
